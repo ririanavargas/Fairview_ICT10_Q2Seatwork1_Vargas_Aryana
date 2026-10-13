@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Club Checker</title>
+</head>
+<body>
+    <h1>ICT Club Checker</h1>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+   
+</body>
+    <style>
+        
+        body {
+            background-color: #f2e3ff;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #4a3b57;
+        }
+
+        .main-container {
+            max-width: 950px;
+            margin: auto;
+        }
+
+        /* HEADER */
+
+        .header {
+            background: #a96cef;
+            color: white;
+            padding: 35px 40px;
+            border-left: 10px solid #7d45b8;
+            box-shadow: 0 5px 0 #d0a6fe;
+        }
+
+        .header h1 {
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            opacity: 0.9;
+        }
+
+        /* GENERAL SECTIONS */
+
+        .section-card {
+            background: white;
+            border: 1px solid #d8b9f4;
+            border-radius: 4px;
+            box-shadow: 4px 4px 0 #d8b9f4;
+        }
+
+        .section-card .card-body {
+            padding: 30px;
+        }
+
+        .section-title {
+            color: #8c52c7;
+            font-weight: bold;
+            border-bottom: 2px solid #e6d0fe;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+
+        /* CALCULATOR AREA */
+
+        .calculator-heading {
+            background-color: #e6d0fe;
+            padding: 15px 20px;
+            margin: 0 -30px 25px -30px;
+            color: #70429b;
+        }
+
+        .calculator-heading h2 {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .calculator-heading p {
+            margin: 5px 0 0;
+            color: #795d8c;
+        }
+
+        .form-label {
+            color: #70429b;
+        }
+
+        .form-control {
+            border: 1px solid #bf84f9;
+            border-radius: 4px;
+            padding: 11px;
+            background-color: #fffaff;
+        }
+
+        .form-control:focus {
+            border-color: #a56eed;
+            box-shadow: none;
+            background-color: white;
+        }
+
+        /* BUTTON */
+
+        .solve-btn {
+            background-color: #a56eed;
+            border: 2px solid #8c52c7;
+            border-radius: 4px;
+            padding: 10px 35px;
+            font-weight: bold;
+            color: white;
+            transition: 0.2s;
+        }
+
+        .solve-btn:hover {
+            background-color: #8c52c7;
+            border-color: #70429b;
+        }
+
+        /* RESULT */
+
+        .result-label {
+            color: #70429b;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        #div2 {
+            background-color: #f2e0ff;
+            border: 2px dashed #bd7af5;
+            padding: 18px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #af5cfd;
+        }
+
+        /* SMALL SCREEN */
+
+        @media (max-width: 576px) {
+            .header {
+                padding: 25px;
+            }
+
+            .section-card .card-body {
+                padding: 22px;
+            }
+
+            .calculator-heading {
+                margin-left: -22px;
+                margin-right: -22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-5 main-container">
+
+
+        
+
+
+
+        <div class="card section-card">
+            <div class="card-body">
+
+                <div class="ICT Club checker-heading">
+                    
+                    <p>Enter your first and last name to check if you are a member of the ICT Club.</p>
+                </div>
+
+                <h3 class="mb-4">
+                    Verify Membership
+                </h3>
+
+                <form>
+
+                    <div class="mb-4">
+                        <label for="input1" class="form-label fw-bold">
+                            First Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="input1"
+                            class="form-control"
+                            placeholder="Type your first name"
+                        >
+                    </div> <br>
+
+
+                    <div class="mb-4">
+                        <label for="input2" class="form-label fw-bold">
+                            Last Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="input2"
+                            class="form-control"
+                            placeholder="Type your last name"
+                        >
+                    </div>
+
+                    <br>
+
+                    <div class="mb-4">
+                        <button
+                            type="button"
+                            py-click="check_member"
+                            class="btn solve-btn">Enter
+                        </button>
+                    </div>
+
+                </form>
+
+
+                <div class="result-label">
+                
+                </div>
+
+                <div id="div2">
+                    Let's see if you are a member of the ICT Club!
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="py" src="main.py"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
